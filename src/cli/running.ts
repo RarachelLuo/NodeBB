@@ -24,7 +24,7 @@ function getRunningPid(callback: (err: NodeJS.ErrnoException | null, pidNum?: nu
             if (e instanceof Error) {
                 callback(e);
             } else {
-                console.error('An unexpected error occurred.');
+                console.log('An unexpected error occurred.');
             }
         }
     });
